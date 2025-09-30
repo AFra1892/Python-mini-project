@@ -7,4 +7,7 @@ content = f.read()
 
 list_of_words = content.split()
 print(list_of_words)
-print(len(list_of_words))
+#print(len(list_of_words))
+
+sorted_list = sorted(list_of_words , key=len)
+print(sorted_list)
