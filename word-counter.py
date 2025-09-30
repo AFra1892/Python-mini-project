@@ -6,8 +6,15 @@ content = f.read()
 #print(content)
 
 list_of_words = content.split()
-print(list_of_words)
+#print(list_of_words)
 #print(len(list_of_words))
 
+
+#sorting the list based on length of element
 sorted_list = sorted(list_of_words , key=len)
+#sorting the list based on length of element and removing the doplicates
+sorted_list_no_doplicate = sorted(set(list_of_words), key =len)
 print(sorted_list)
+print(str(sorted_list_no_doplicate))
+
+
