@@ -14,7 +14,12 @@ list_of_words = content.split()
 sorted_list = sorted(list_of_words , key=len)
 #sorting the list based on length of element and removing the doplicates
 sorted_list_no_doplicate = sorted(set(list_of_words), key =len)
-print(sorted_list)
-print(str(sorted_list_no_doplicate))
+#print(sorted_list)
+#print(str(sorted_list_no_doplicate))
 
+
+#seperating top 20 word in txt file based on length
+nodoplicate_list = list(sorted_list_no_doplicate)
+final_list = nodoplicate_list[-20:]
+print(final_list)
 
