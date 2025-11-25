@@ -17,4 +17,8 @@ c = np.array([[1,2,3],[4,5,6],[7,8,9]])
 #print(c[:,1:2])
 
 c[1,2] = 99
-print(c)
+
+d = np.zeros((2,3))
+e = np.ones((2,2))
+f = np.full((2,4,4),88)
+print(f)
